@@ -1,13 +1,12 @@
-HN Discourse
-~~~~~~~~~~~~~
+# HN Discourse
 
-TODOS
-~~~~~~
+# TODOS
+-----------------------------
 * Correct SMTP details
 * Call API and change workflow accordingly
 
 
-Links
-~~~~~~~
+# Links
+---------------------------------
 MongoDB installation: http://www.mkyong.com/mongodb/how-to-install-mongodb-on-windows/
 
