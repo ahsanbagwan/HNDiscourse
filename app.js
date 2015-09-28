@@ -56,8 +56,6 @@ app.post('/login', function(req, res){
 		res.send(200);
 
 	}); 
-
-
 });
 
 app.get('/account/authenticated', function(req, res){
