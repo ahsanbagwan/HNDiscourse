@@ -4,7 +4,7 @@ module.exports = {
 	port: 587,
 	secureConnection: false,
 	auth: {
-		user: "myusername",
+		user: "ahsanbagwan@gmail.com",
 		pass: "mypassword"
 	},
 	ignoreTLS: false,
