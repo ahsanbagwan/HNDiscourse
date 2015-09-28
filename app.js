@@ -32,7 +32,8 @@ app.configure(function() {
 });
 
 app.get('/', function(req, res){
-	res.render("index.jade", {layout:true});
+	console.log("In route /");
+	res.render("index.jade");
 });
 
 app.post('/login', function(req, res){
