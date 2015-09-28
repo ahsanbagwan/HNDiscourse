@@ -1,13 +1,13 @@
 var express = require('express');
 var app = express();
 var nodemailer = require('nodemailer');
-var MemoryStore = require('connect').session.MemoryStore;
+//var MemoryStore = require('connect').session.MemoryStore;
 var dbPath = 'mongodb://localhost/nodebackbone';
 
 // Import the data layer
 var mongoose = require('mongoose');
 var config = {
-	mail: require('.config/mail')
+	mail: require('./config/mail')
 };
 
 // Import the models
@@ -22,8 +22,8 @@ app.configure(function() {
 	app.use(express.bodyParser());
 	app.use(express.cookieParser());
 	app.use(express.session({
-		secret: "ahsans secret",
-		store: new MemoryStore()
+		secret: "ahsans secret"
+		//,store: new MemoryStore()
 	}));
 	mongoose.connect(dbPath,function onMongooseError(err) {
 		if (err)
