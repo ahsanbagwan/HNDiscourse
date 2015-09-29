@@ -10,5 +10,4 @@ module.exports = {
 	ignoreTLS: false,
 	debug: false,
 	maxConnections: 5
-
 }

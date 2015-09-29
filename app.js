@@ -1,8 +1,12 @@
 var express = require('express');
+
+// add new way of starting server
 var app = express();
 var nodemailer = require('nodemailer');
 //var MemoryStore = require('connect').session.MemoryStore;
+var fs = require('fs');
 var dbPath = 'mongodb://localhost/nodebackbone';
+var events = require('events');
 
 // Import the data layer
 var mongoose = require('mongoose');
